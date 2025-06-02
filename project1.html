@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 1.5rem 2rem;
+            text-align: left;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        .about {
+            padding: 3rem 2rem;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: -2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .about h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #4f46e5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            background-color: #e0e0e0;
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 4rem;
+            }
+
+            .hero p {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 align="center">website</h1>
+        <nav>
+            <a href="project.html"><img
+                    src="https://thumbs.dreamstime.com/b/beautiful-arrow-left-right-up-down-lower-upper-290528069.jpg"
+                    height="30"></a>
+            <a href="project1.html">Home</a>
+            <a href="reel.html">video</a>
+            <a href="about.html">about</a>
+
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Jamacho Hike</h1>
+        <p>Jamacho Peak Hike is an easy graded hike that completes within 6-7 hours. As this place is quite near to
+            Kathmandu, anybody having a short time in Kathmandu can afford this hike.</p>
+    </section>
+
+    <section class="about">
+        <h2>About</h2>
+        <p>click about button for more information.</p>
+    </section>
+
+    <footer>
+        &copy; 2025 My Website. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

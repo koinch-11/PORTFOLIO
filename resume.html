@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit - Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #ebc6c6;
+            color: #a57c7c;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 26px 50px;
+            background-color: #5dd8c8;
+            box-shadow: 0 2px 4px rgba(94, 104, 238, 0.1);
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ccddd9;
+        }
+
+        /* Resume Section */
+        .resume {
+            background-color: #ffffff;
+            padding: 60px 20px;
+        }
+
+        .resume .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .resume h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 3.5em;
+            color: #000000;
+        }
+
+        .resume-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: space-between;
+        }
+
+        .resume-section {
+            flex: 1 1 300px;
+        }
+
+        .resume-section h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #29a8a8;
+        }
+
+        .resume-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .resume-section ul li {
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list li {
+            background-color: #82f3ea;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .resume-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .resume-section {
+                flex: 1 1 100%;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <i><a href="index.html">Back to home</a></i>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="resume">
+            <div class="container">
+                <h2>Resume</h2>
+                <div class="resume-content">
+                    <div class="resume-section">
+                        <h3>Education</h3>
+                        <ul>
+                            <li>
+                                <strong>Bachelor of Computer Aplication(BCA)</strong><br>
+                                Lumbini Academy (Affiliated to TU), 2023 - 2027
+                            </li>
+                            <li>
+                                <strong>Higher Secondary Education</strong><br>
+                                Lumbini Academy, 2018 - 2020
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-section">
+                        <h3>Experience</h3>
+                        <ul>
+                            <li>
+                                <strong>Web Developer</strong><br>
+                                Tech ABC., 2022 - Present<br>
+                                - Developed responsive web applications using HTML, CSS, and JavaScript.
+                            </li>
+                            <li>
+                                <strong>Intern Developer</strong><br>
+                                XYZ, Summer 2023<br>
+                                - Assisted in developing client websites and debugging code.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-section">
+                        <h3>Skills</h3>
+                        <ul class="skills-list">
+                            <li>Hypertext Markup Language(HTML)</li><br>
+                            <li>Cascading Stlye Sheet(CSS)</li><br>
+                            <li>Java Programing Language</li><br>
+                            <li>C Programing Language</li><br>
+                            <li>Data Structure and Algorithm(DSA)</li><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+
+</html>

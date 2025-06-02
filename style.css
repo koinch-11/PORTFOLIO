@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #0d0d0d;
+  overflow-x: hidden;
+}
+
+.logo {
+  width: 40px;
+  margin: 20px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('assets/images/pp.png') no-repeat center center/cover;
+  display: flex;
+  align-items: left ;
+  justify-content: last baseline;
+  flex-direction: column;
+  text-align: left;
+  padding: 170px 100px;
+}
+
+.content {
+  position: relative;
+  z-index: 5;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #aaaaff;
+}
+
+.dev-tags {
+  font-family: monospace;
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.role {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  font-weight: 300;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+

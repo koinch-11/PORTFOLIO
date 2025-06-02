@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Rohit</title>
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: white;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: rgb(210, 210, 241);
+      padding: 30px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #000000;
+    }
+
+    /* Main Content */
+    main {
+      padding: 40px;
+    }
+
+    .contact-section {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-section h1 {
+      font-size: 4rem;
+      margin-bottom: 12px;
+      color: #000000;
+    }
+
+    .contact-section p {
+      margin-bottom: 30px;
+      color: #000000;
+    }
+
+    /* Contact Container */
+    .contact-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      background-color: #c5c2c2;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(233, 225, 225, 0.05);
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #6b6666;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #7e7a7a;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #070606;
+      outline: none;
+    }
+
+    .contact-form .btn {
+      background-color: #2561af;
+      color: #fcfcff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form .btn:hover {
+      background-color: blue;
+    }
+
+    /* Contact Info */
+    .contact-info {
+      flex: 1;
+      min-width: 250px;
+      background-color: #ecf0ee;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px black(0, 0, 0, 0.05);
+    }
+
+    .contact-info h2 {
+      margin-bottom: 20px;
+      color: #000000;
+    }
+
+    .contact-info p {
+      margin-bottom: 15px;
+      color: #000000;
+    }
+
+    .contact-info .social-links {
+      margin-top: 20px;
+    }
+
+    .contact-info .social-links a {
+      display: inline-block;
+      margin-right: 15px;
+      text-decoration: none;
+      color: #c0b2b2;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info .social-links a:hover {
+      color: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #c9dbec;
+      border-top: 1px solid #e5ecec;
+      color: #000000;
+      margin-top: 40px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="assets/images/logo.png" alt="logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="resume">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>CONTACT</h1>
+      <p>Feel free to reach out by filling the form below or via the provided contact information.</p>
+
+      <div class="contact-container">
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter you name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="abc@gmail.com" name="email" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Subject" name="subject" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write a message" rows="6" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p><strong>Email:</strong> koinch11@gmail.com</p>
+          <p><strong>Phone:</strong> +012-**********</p>
+          <p><strong>Location:</strong> SpaceX,Mars</p>
+          <div class="social-links">
+
+            <a href="https://github.com/koinch-11/portfolio" target="_blank"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPDkgMxmkauALEWCvzrAWa9jmA7tZqvpV4xQ&s"
+                height="54"></a>
+
+            <a href="https://facebook.com" target="_blank"><img
+                src="https://www.computerhope.com/comp/logos/facebook.png" height="50"></a></a>
+            <a href="https://instagram.com" target="_blank"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" height="50"></a></a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rohit. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

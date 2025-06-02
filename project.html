@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit - Portfolio</title>
+    <style>
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            /* Positions logo to the left and nav to the right */
+            align-items: center;
+            padding: 30px 50px;
+            background-color: #79e6af;
+            /* Adjust as needed */
+            box-shadow: 0 1px 8px #ffffff;
+        }
+
+        /* Logo Styling */
+        .logo {
+            height: 50px;
+            /* Adjust as needed */
+        }
+
+        /* Navigation Styling */
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fffcfc;
+            /* Adjust as needed */
+            font-weight:400px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #0f0f0f;
+            /* Adjust as needed */
+        }
+
+
+        .projects {
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+        }
+
+        .projects .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            flex: 1 1 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .project-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #10a37f;
+        }
+
+        .project-card p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .project-card .btn {
+            background-color: #10a37f;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-card .btn:hover {
+            background-color: #0e8c6c;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <i><a href="index.html">Back to Home</a></i>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <section class="projects">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <h3>Project 1</h3>
+                            <p>A brief description of Project 1.</p>
+                            <a href="project1.html" class="btn">View Project</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Project 2</h3>
+                            <p>A brief description of Project 2.</p>
+                            <a href="project2.html" class="btn">View Project</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Project 3</h3>
+                            <p>A brief description of Project 3.</p>
+                            <a href="view project" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+</body>
+
+</html>
